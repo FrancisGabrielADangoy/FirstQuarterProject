@@ -4,7 +4,7 @@ body {
     color: #333;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,16 +17,18 @@ body {
 }
 
 
-.navbar a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 10px;
     position: relative;
     z-index: 1; 
+    transition: font-size 0.1s;
 }
 
-.navbar a:hover {
+nav a:hover {
     text-decoration: underline;
+    font-size: 30px;
 }
 
 .nav-links {
@@ -42,13 +44,14 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
+    transition: 0.1s;
 }
 
 .nav-item:hover {
-    background-color: #e65c54;
+    background-color: crimson;
 }
 
-.hero {
+header {
     background-image: url('../images/drinking.jpg');
     background-size: cover;
     background-position: center;
@@ -61,25 +64,29 @@ body {
     text-align: center;
 }
 
-.hero h1 {
+header h1 {
     font-size: 3em;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
-.content {
+section {
     padding: 20px;
     text-align: center;
 }
 
-.content h2 {
+section h2 {
     color: #005792;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.content p {
+section p {
     font-size: 1.1em;
     margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
 }
