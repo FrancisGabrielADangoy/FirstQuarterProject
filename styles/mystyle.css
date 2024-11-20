@@ -23,11 +23,9 @@ nav a {
     padding: 10px;
     position: relative;
     z-index: 1; 
-    transition: font-size 0.1s;
 }
 
 nav a:hover {
-    text-decoration: underline;
     font-size: 30px;
 }
 
@@ -51,6 +49,17 @@ nav a:hover {
     background-color: crimson;
 }
 
+nav .logo{
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+nav .logo:hover{
+    transform: scale(1.3);
+}
+
+
 header {
     background-image: url('../images/drinking.jpg');
     background-size: cover;
@@ -68,6 +77,11 @@ header h1 {
     font-size: 3em;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 1s;
+}
+
+header h1:hover{
+    font-size: 4em;
 }
 
 
@@ -89,4 +103,12 @@ section p {
 
 footer{
     text-align: center;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    clear: both;
+    position: relative;
+    height: 20px;
+    margin-top: -20px;
 }
+
