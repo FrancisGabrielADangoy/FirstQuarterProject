@@ -146,6 +146,22 @@ footer {
     justify-content: flex-end;
 }
 
+.splash-animation {
+    width: 85px; 
+    height: 96px;
+    background-image: url('../images/animation.png'); 
+    background-repeat: no-repeat;
+    animation: play-splash 1s steps(6) infinite; 
+}
+
+@keyframes play-splash {
+    from {
+        background-position: -20px; 
+    }
+    to {
+        background-position: -689px; 
+    }
+}
 
 /* Replace with correct icon paths */
 .icon-facebook {
